@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScopsK — Smart supply, quoted and delivered</title>
+    <meta
+      name="description"
+      content="ScopsK is the B2B procurement marketplace connecting restaurants and suppliers — smart RFQs, ranked quotes, in-app payments, and live delivery."
+    />
+    <meta property="og:title" content="ScopsK — Smart supply, quoted and delivered" />
+    <meta
+      property="og:description"
+      content="B2B restaurant–supplier procurement marketplace. Download on the App Store and Google Play."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#ff5722" />
+    <link rel="icon" type="image/png" href="/favicons/scopsk-logo-light-mode.png" />
+    <link rel="apple-touch-icon" href="/favicons/scopsk-logo-light-mode.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('scopsk-theme');
+          var dark =
+            stored === 'dark' ||
+            (stored !== 'light' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-brand-paper text-sage-900 antialiased dark:bg-sage-900 dark:text-sage-50">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
